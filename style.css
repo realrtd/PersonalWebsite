@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.dogBreedItem {
+    text-align: center;
+    position: relative;
+}
+
+.dogBreedImageContainer {
+    position: relative;
+}
+
+img {
+    width: 350px;
+    height: auto;
+}
+
+.hoverText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.hoverText a {
+    color: blue
+}
+
+.hoverText a:hover {
+    color: lightblue
+}
+
+.dogBreedImageContainer:hover .hoverText {
+    opacity: 1;
+}
